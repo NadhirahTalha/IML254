@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website HTML CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .home {
+            background-color: #121a20;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .audio-player {
+            margin: 20px 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #10171c;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Nadhirah.</a>
+        <nav class="navbar">
+            <a href="home.html" class="active">Home</a>
+            <div class="dropdown">
+                <a href="#">AboutMe</a>
+                <div class="dropdown-content">
+                    <a href="backgrounds_page.html">Backgrounds</a>
+                    <a href="friends.html">F.R.I.E.N.D.S</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Families</a>
+                <div class="dropdown-content">
+                    <a href="mydad.html">My Dad</a>
+                    <a href="mymom.html">My Mom</a>
+                    <a href="along.html">Brother1</a>
+                    <a href="angah.html">Brother2</a>
+                    <a href="kakteh.html">LilSis1</a>
+                    <a href="aishah.html">LilSis2</a>
+                </div>
+            </div>
+            <a href="mycat.html">MyCat</a>
+            <a href="unilife.html">UniLife</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>My Mom.</h1>
+            <h3>Roziaton Mohd Nordin</h3>
+            <p>Works as a legal advisor officer.</p>
+            <p>Best mom ever in the world.</p>
+        </div>
+
+        <div class="container">
+            <a target="_blank" href="images/mom1.jpg"></a>
+            <img src="images/mom1.jpg" alt="Image A">
+        </a>
+            <a target="_blank" href="images/mom2.jpg"></a>
+            <img src="images/mom2.jpg" alt="Image B">
+        </a>
+            <a target="_blank" href="images/mom3.jpg"></a>
+            <img src="images/mom3.jpg" alt="Image C">
+        </a>
+            <a target="_blank" href="images/mom4.jpg"></a>
+            <img src="images/mom4.jpg" alt="Image D">
+        </a>
+            <a target="_blank" href="images/mom5.jpg"></a>
+            <img src="images/mom5.jpg" alt="Image E">
+        </a>
+        </div>
+    </section>
+
+    <div class="audio-player">
+        <audio controls autoplay loop>
+            <source src="audio/espresso.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <button onclick="document.querySelector('audio').muted = !document.querySelector('audio').muted;">
+        Toggle Mute
+    </button>
+
+    <footer class="footer">
+        <p>&copy; 2024 Nadhirah. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

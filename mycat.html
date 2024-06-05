@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website HTML CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .video-container {
+            max-width: 100%;
+            margin: 20px 0;
+        }
+
+        .video-container video {
+            width: 50%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0px 8px 16px rgba(157, 208, 243, 0.788);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Nadhirah.</a>
+        <nav class="navbar">
+            <a href="home.html" class="active">Home</a>
+            <div class="dropdown">
+                <a href="#">AboutMe</a>
+                <div class="dropdown-content">
+                    <a href="backgrounds_page.html">Backgrounds</a>
+                    <a href="friends.html">F.R.I.E.N.D.S</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Families</a>
+                <div class="dropdown-content">
+                    <a href="mydad.html">My Dad</a>
+                    <a href="mymom.html">My Mom</a>
+                    <a href="along.html">Brother1</a>
+                    <a href="angah.html">Brother2</a>
+                    <a href="kakteh.html">LilSis1</a>
+                    <a href="aishah.html">LilSis2</a>
+                </div>
+            </div>
+            <a href="mycat.html">MyCat</a>
+            <a href="unilife.html">UniLife</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h3>Lulu & Oreo</h3>
+<div class="video-container">
+                <video controls>
+                    <source src="videos/luluoreo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Nadhirah. All rights reserved.</p>
+    </footer>
+    
+
+</body>
+</html>
